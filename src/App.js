@@ -6,6 +6,23 @@ import './App.css';
 const TWITTER_HANDLE = '_buildspace';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
+const TEST_GIFTS = [
+  'https://tenor.com/bgGFv.gif',
+  'https://tenor.com/HaRE.gif',
+  'https://tenor.com/bJCF6.gif',
+  'https://tenor.com/bkD1E.gif',
+  'https://tenor.com/bEqtu.gif',
+  'https://tenor.com/uFRo.gif',
+  'https://tenor.com/bbotP.gif',
+  'https://tenor.com/bmbT4.gif',
+  'https://tenor.com/6jQz.gif',
+  'https://tenor.com/bjOqj.gif',
+  'https://tenor.com/Wy9H.gif',
+  'https://tenor.com/bAR4M.gif',
+  'https://tenor.com/vg4t.gif',
+  'https://tenor.com/oWKS.gif',
+]
+
 const App = () => {
   // State
   const [walletAddress, setWalletAddress] = useState(null);
@@ -70,9 +87,9 @@ const App = () => {
 			{/* This was solely added for some styling fanciness */}
 			<div className={walletAddress ? 'authed-container' : 'container'}>
         <div className="header-container">
-          <p className="header">🖼 GIF Portal</p>
+          <p className="header">Random GIF Gallery</p>
           <p className="sub-text">
-            View your GIF collection in the metaverse ✨
+            Random GIFs to use in Discord conversations.
           </p>
           {/* Add the condition to show this only if we don't have a wallet address */}
           {!walletAddress && renderNotConnectedContainer()}
